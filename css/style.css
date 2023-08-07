@@ -16,6 +16,7 @@
 }
 
 body {
+  margin: 0;
   display: flex;
   justify-content: center;
 }
@@ -25,6 +26,10 @@ body {
   max-width: 1440px;
   /* padding: 0 50px; */
   box-sizing: border-box;
+}
+
+a {
+    color: #000;
 }
 
 main {
@@ -422,6 +427,7 @@ p {
   /* flex-basis: 100%; */
   flex: 1;
   height: 439px;
+  padding: 0;
 
   /* border: solid 2px red; */
 }
@@ -597,11 +603,11 @@ footer .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
+  /* 
   .filter-box {
     flex: 1;
     flex-grow: 1;
-  }
+  } */
 
   /* Mobile HEBERGEMENTS */
 
