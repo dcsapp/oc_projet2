@@ -29,7 +29,7 @@ body {
 }
 
 a {
-    color: #000;
+  color: #000;
 }
 
 main {
@@ -571,6 +571,10 @@ footer .container {
     border-bottom: 2px solid var(--main-color);
   }
 
+  .info-group {
+    margin: 0 20px;
+  }
+
   .search-form {
     justify-content: center;
   }
@@ -598,16 +602,25 @@ footer .container {
     font-size: 14px;
   }
 
+  /* Grid Option */
+  /* 
   .filter-boxes {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-  /* 
-  .filter-box {
-    flex: 1;
-    flex-grow: 1;
   } */
+
+  /* flex version */
+  .filter-boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter-boxes > * {
+    align-content: space-between;
+    flex: 0 0 47%;
+  }
 
   /* Mobile HEBERGEMENTS */
 
