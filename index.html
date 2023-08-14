@@ -22,32 +22,40 @@
 
   <body>
     <div class="main-container">
-      <header>
+      <header class="header-container">
+        <!-- 
+            header contient 2 éléments
+            - le logo
+            - un menu nav <nav> constitué de 2 items
+                - Hébergements 
+                - Activités
+         -->
+        <!-- LOGO -->
         <div class="header-logo">
           <img class="logo" src="images/logo/Booki.png" alt="Logo Booki" />
         </div>
-        <div class="nav-menu">
-          <!-- <div>
-            <a class="nav-menu-item" href="#hebergements">Hébergement</a>
+
+        <!-- NAV -->
+        <!-- nav container -->
+
+        <nav class="nav-container">
+          <div class="nav-item">
+            <a href="#">Hébergements</a>
           </div>
-          <div>
-            <a class="nav-menu-item" href="#activites">Activités</a>
-          </div> -->
-          <div class="nav-menu-item">
-            <a href="#hebergements">Hébergement</a>
+          <div class="nav-item">
+            <a href="#">Activités</a>
           </div>
-          <div class="nav-menu-item">
-            <a href="#activites">Activités</a>
-          </div>
-        </div>
+        </nav>
       </header>
 
       <main>
         <div class="info-group">
-          <div>
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+          <section>
+            <h1 class="section-title">
+              Trouver votre hébergement pour des vacances de rêve
+            </h1>
             <p>En plein centre ville ou en pleine nature</p>
-          </div>
+          </section>
 
           <!-- Search form -->
 
@@ -389,6 +397,7 @@
           <div>
             <h2 class="section-title">Activités à Marseille</h2>
           </div>
+
           <section class="activity-cards">
             <div class="card">
               <div class="card-content">
