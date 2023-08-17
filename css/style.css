@@ -376,6 +376,7 @@ main {
   margin-bottom: 5px;
 }
 /* ---------ACTIVITY --------- */
+/* titre + container activites */
 .activities {
   display: flex;
   flex-direction: column;
@@ -394,7 +395,6 @@ main {
 /* Individual activity cards  */
 .activity-cards .card {
   flex: 1;
-  height: 439px;
   padding: 0;
 }
 
@@ -452,13 +452,13 @@ footer .container {
 
   .hebergements {
     width: 100%;
-    order: 2;
+    /* order: 2; */
   }
 
   .populaires {
     width: 100%;
     margin-top: 50px;
-    order: 1;
+    /* order: 1; */
   }
 
   .populaires-cards {
@@ -588,6 +588,15 @@ footer .container {
 
   .hebergements-and-populaires {
     flex-direction: column;
+  }
+
+  /* Affichage des populaire en premier */
+  .hebergements {
+    order: 2;
+  }
+
+  .populaires {
+    order: 1;
   }
 
   .hebergements-and-populaires .hebergements {
