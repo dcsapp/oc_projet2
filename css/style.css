@@ -16,6 +16,10 @@
   color: var(--main-color);
 }
 
+a {
+  color: #000;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -111,6 +115,7 @@ main {
 .nav-item a {
   padding-top: 14px;
   color: #000;
+  border-top: 2px solid transparent;
 }
 
 .nav-item a:hover {
@@ -154,11 +159,16 @@ main {
   width: 195px;
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
-
+  text-align: left;
+  padding: 10px;
   border: none;
   border-top: 1px solid var(--main-bg-color);
   border-bottom: 1px solid var(--main-bg-color);
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: #000;
 }
 
 .search-form-button {
@@ -513,17 +523,20 @@ footer .container {
     justify-content: center;
     align-items: flex-start;
     border-top: 2px solid transparent;
+    border-bottom: 2px solid #f2f2f2;
   }
 
   .nav-item a {
+    border-top: 2px solid transparent;
     padding: 0 0 14px 0;
+    
   }
 
   .nav-item a:hover {
     text-align: center;
     width: 100%;
     color: var(--main-color);
-    border-top: 0px;
+    border-top: 2px solid transparent;
     border-bottom: 2px solid var(--main-color);
   }
 
