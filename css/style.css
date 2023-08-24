@@ -468,17 +468,24 @@ footer .container {
   .populaires {
     width: 100%;
     margin-top: 50px;
+
     /* order: 1; */
   }
 
   .populaires-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex: 1;
+    gap: 30px;
+    /* justify-content: space-between;
+    flex: 1; */
+    width: auto; /* 30%     .card */
   }
 
-  .populaires-cards .card {
-    width: 30%;
+  .populaires-cards a {
+    flex: 1;
+    justify-content: space-between;
+    width: 100%; /* 30%     .card */
   }
 
   .populaires-cards .card-title {
@@ -498,7 +505,7 @@ footer .container {
   /* MOBILE HEADER  */
   .header-container {
     width: 100%;
-    /* height: 115px; */
+    height: 115px;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 30px;
@@ -506,7 +513,10 @@ footer .container {
 
   .header-logo {
     width: 100%;
+    height: 79px;
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .nav-container {
@@ -521,20 +531,23 @@ footer .container {
     padding: 0;
     flex: 1;
     justify-content: center;
-    align-items: flex-start;
+   /*  align-items: flex-start; */
     border-top: 2px solid transparent;
     border-bottom: 2px solid #f2f2f2;
   }
 
   .nav-item a {
+    width: 100%; /* solve issue color not change if hover not on word */
+    text-align: center;
     border-top: 2px solid transparent;
     padding: 0 0 14px 0;
-    
   }
 
   .nav-item a:hover {
-    text-align: center;
-    width: 100%;
+    border-top: 2px solid transparent;
+  }
+
+  .nav-item:hover {
     color: var(--main-color);
     border-top: 2px solid transparent;
     border-bottom: 2px solid var(--main-color);
@@ -554,6 +567,7 @@ footer .container {
   }
   .search-form-button-icon {
     display: block;
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.2);
   }
 
   /* Mobile FILTERS */
@@ -594,6 +608,7 @@ footer .container {
     /* width: 35%; */
     /* align-content: space-evenly; */
     /*  flex-grow: 0; */
+
     flex: 1 0 35%;
   }
 
